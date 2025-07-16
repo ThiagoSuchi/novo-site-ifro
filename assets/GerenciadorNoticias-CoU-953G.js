@@ -1,9 +1,9 @@
-var n=Object.defineProperty;var l=(a,i,t)=>i in a?n(a,i,{enumerable:!0,configurable:!0,writable:!0,value:t}):a[i]=t;var s=(a,i,t)=>l(a,typeof i!="symbol"?i+"":i,t);import{_ as d}from"./main-DNpTjYPO.js";class m{constructor(){s(this,"containerNoticias");this.containerNoticias=document.getElementById("grade-noticias"),this.inicializar()}inicializar(){this.renderizarNoticias()}renderizarNoticias(){d(async()=>{const{noticias:i}=await import("./noticias-Cj4i-3_c.js");return{noticias:i}},[]).then(({noticias:i})=>{const t=i[0],c=i.slice(1),e=this.criarHtmlNoticiaPrincipal(t),r=c.map(o=>this.criarHtmlNoticiaSecundaria(o)).join("");this.containerNoticias.innerHTML=`
+var n=Object.defineProperty;var l=(a,i,t)=>i in a?n(a,i,{enumerable:!0,configurable:!0,writable:!0,value:t}):a[i]=t;var o=(a,i,t)=>l(a,typeof i!="symbol"?i+"":i,t);import{_ as d}from"./main-XQU4Y6E3.js";class p{constructor(){o(this,"containerNoticias");if(console.log("📰 Inicializando GerenciadorNoticias..."),this.containerNoticias=document.getElementById("grade-noticias"),!this.containerNoticias){console.error("❌ Elemento grade-noticias não encontrado");return}console.log("✅ Elemento grade-noticias encontrado"),this.inicializar()}inicializar(){this.renderizarNoticias()}renderizarNoticias(){console.log("📰 Renderizando notícias..."),d(async()=>{const{noticias:i}=await import("./noticias-Cj4i-3_c.js");return{noticias:i}},[]).then(({noticias:i})=>{console.log("📰 Dados das notícias carregados:",i.length,"notícias");const t=i[0],s=i.slice(1),e=this.criarHtmlNoticiaPrincipal(t),c=s.map(r=>this.criarHtmlNoticiaSecundaria(r)).join("");this.containerNoticias.innerHTML=`
         ${e}
         <div class="noticias-secundarias">
-          ${r}
+          ${c}
         </div>
-      `})}criarHtmlNoticiaPrincipal(i){return`
+      `,console.log("✅ Notícias renderizadas com sucesso")}).catch(i=>{console.error("❌ Erro ao carregar dados das notícias:",i)})}criarHtmlNoticiaPrincipal(i){return`
       <div class="noticia-principal">
         <div class="imagem-noticia-principal">
           <img src="${i.imagem}" alt="${i.titulo}" />
@@ -53,4 +53,4 @@ var n=Object.defineProperty;var l=(a,i,t)=>i in a?n(a,i,{enumerable:!0,configura
           </div>
         </div>
       </div>
-    `}}export{m as GerenciadorNoticias};
+    `}}export{p as GerenciadorNoticias};
