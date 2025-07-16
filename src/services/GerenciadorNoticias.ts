@@ -1,4 +1,4 @@
-import { Noticia } from '../interfaces/index.js';
+import { Noticia } from '../interfaces/index';
 
 // Classe para gerenciar as notícias
 export class GerenciadorNoticias {
@@ -15,7 +15,7 @@ export class GerenciadorNoticias {
 
   private renderizarNoticias(): void {
     // Importar dados das notícias
-    import('../data/noticias.js').then(({ noticias }) => {
+    import('../data/noticias').then(({ noticias }) => {
       const noticiaPrincipal = noticias[0];
       const noticiasSecundarias = noticias.slice(1);
 

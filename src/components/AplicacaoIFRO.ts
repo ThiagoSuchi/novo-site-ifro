@@ -25,27 +25,27 @@ export class AplicacaoIFRO {
     
     try {
       // Importar e inicializar todos os gerenciadores
-      const { GerenciadorPesquisa } = await import('../services/GerenciadorPesquisa.js');
+      const { GerenciadorPesquisa } = await import('../services/GerenciadorPesquisa');
       this.gerenciadorPesquisa = new GerenciadorPesquisa();
       console.log('GerenciadorPesquisa inicializado');
       
-      const { GerenciadorMenuMobile } = await import('../services/GerenciadorMenuMobile.js');
+      const { GerenciadorMenuMobile } = await import('../services/GerenciadorMenuMobile');
       this.gerenciadorMenuMobile = new GerenciadorMenuMobile();
       console.log('GerenciadorMenuMobile inicializado');
       
-      const { GerenciadorFiltrosCursos } = await import('../services/GerenciadorFiltrosCursos.js');
+      const { GerenciadorFiltrosCursos } = await import('../services/GerenciadorFiltrosCursos');
       this.gerenciadorFiltrosCursos = new GerenciadorFiltrosCursos();
       console.log('GerenciadorFiltrosCursos inicializado');
       
-      const { GerenciadorNoticias } = await import('../services/GerenciadorNoticias.js');
+      const { GerenciadorNoticias } = await import('../services/GerenciadorNoticias');
       this.gerenciadorNoticias = new GerenciadorNoticias();
       console.log('GerenciadorNoticias inicializado');
       
-      const { GerenciadorNavegacaoSuave } = await import('../services/GerenciadorNavegacaoSuave.js');
+      const { GerenciadorNavegacaoSuave } = await import('../services/GerenciadorNavegacaoSuave');
       this.gerenciadorNavegacaoSuave = new GerenciadorNavegacaoSuave();
       console.log('GerenciadorNavegacaoSuave inicializado');
       
-      const { GerenciadorSubmenu } = await import('../services/GerenciadorSubmenu.js');
+      const { GerenciadorSubmenu } = await import('../services/GerenciadorSubmenu');
       this.gerenciadorSubmenu = new GerenciadorSubmenu();
       console.log('GerenciadorSubmenu inicializado');
       

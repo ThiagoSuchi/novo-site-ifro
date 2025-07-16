@@ -1,4 +1,4 @@
-import { Curso } from '../interfaces/index.js';
+import { Curso } from '../interfaces/index';
 
 // Classe para gerenciar os filtros de cursos
 export class GerenciadorFiltrosCursos {
@@ -70,7 +70,7 @@ export class GerenciadorFiltrosCursos {
 
   private renderizarCursos(): void {
     // Importar dados dos cursos
-    import('../data/cursos.js').then(({ cursos }) => {
+    import('../data/cursos').then(({ cursos }) => {
       const cursosFiltrados = this.filtroAtivo === 'todos' 
         ? cursos 
         : cursos.filter(curso => curso.nivel === this.filtroAtivo);

@@ -1,4 +1,4 @@
-import { Curso } from '../interfaces/index.js';
+import { Curso } from '../interfaces/index';
 
 // Dados dos cursos
 export const cursos: Curso[] = [

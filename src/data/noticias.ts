@@ -1,4 +1,4 @@
-import { Noticia } from '../interfaces/index.js';
+import { Noticia } from '../interfaces/index';
 
 // Dados das notícias
 export const noticias: Noticia[] = [
